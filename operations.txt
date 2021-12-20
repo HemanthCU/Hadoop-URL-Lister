@@ -1,0 +1,19 @@
+student-02-365d8a3a69c9@dcsc-cluster-m:~$ unzip lab2.zip
+student-02-365d8a3a69c9@dcsc-cluster-m:~/lab2-url-lister-HemanthCU$ make filesystem
+student-02-365d8a3a69c9@dcsc-cluster-m:~/lab2-url-lister-HemanthCU$ make prepare
+student-02-365d8a3a69c9@dcsc-cluster-m:~/lab2-url-lister-HemanthCU$ hdfs dfs -ls
+student-02-365d8a3a69c9@dcsc-cluster-m:~/lab2-url-lister-HemanthCU$ make
+student-02-365d8a3a69c9@dcsc-cluster-m:~/lab2-url-lister-HemanthCU$ hadoop jar ./URLCount.jar URLCount input urlcount-output
+student-02-365d8a3a69c9@dcsc-cluster-m:~/lab2-url-lister-HemanthCU$ hdfs dfs -cat urlcount-output/part-r-00002
+#cite_note-releases-2   7
+student-02-365d8a3a69c9@dcsc-cluster-m:~/lab2-url-lister-HemanthCU$ hdfs dfs -cat urlcount-output/part-r-00003
+/wiki/ISBN_(identifier) 18
+/wiki/MapReduce 6
+student-02-365d8a3a69c9@dcsc-cluster-m:~/lab2-url-lister-HemanthCU$ hdfs dfs -cat urlcount-output/part-r-00004
+student-02-365d8a3a69c9@dcsc-cluster-m:~/lab2-url-lister-HemanthCU$ hdfs dfs -cat urlcount-output/part-r-00005
+/wiki/Doi_(identifier)  17
+student-02-365d8a3a69c9@dcsc-cluster-m:~/lab2-url-lister-HemanthCU$ hdfs dfs -cat urlcount-output/part-r-00006
+mw-data:TemplateStyles:r999302996       110
+student-02-365d8a3a69c9@dcsc-cluster-m:~/lab2-url-lister-HemanthCU$ hdfs dfs -cat urlcount-output/part-r-00000
+student-02-365d8a3a69c9@dcsc-cluster-m:~/lab2-url-lister-HemanthCU$ hdfs dfs -cat urlcount-output/part-r-00001
+student-02-365d8a3a69c9@dcsc-cluster-m:~/lab2-url-lister-HemanthCU$ 
